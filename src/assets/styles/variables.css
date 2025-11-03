@@ -1,0 +1,399 @@
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/poppins-v24-latin-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v24-latin-600.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/poppins-v24-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --primary-color: #091156;
+  --secondary-color: #FF64AE;
+  --three-color: #8B8B8B;
+  --four-color: #D7DBFF;
+  --white-color: #FFFFFF;
+  --font-family: 'Poppins', Arial, sans-serif;
+  --font-size-base: 1rem;
+  --font-size-xs: 0.875rem;
+  --font-size-md: 1.125rem;
+  --font-size-sm: 2.25rem;
+  --font-size-lg: 3rem;
+  --container-width: 1200px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: 80px 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 40px 15px;
+  }
+}
+
+.btn-default {
+  background-color: var(--secondary-color);
+  color: var(--white-color) !important;
+  border-radius: 50px;
+  padding: 10px 30px !important;
+  transition: 0.5s ease-in-out;
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+  border: none;
+}
+
+.btn-default:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color) !important;
+  animation: am1 0.5s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes am1 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.slideInFromLeft {
+  animation: slideInFromLeft 1s ease-in-out forwards;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slideInFromRight {
+  animation: slideInFromRight 1s ease-in-out forwards;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slideInFromBottom {
+  animation: slideInFromBottom 1s ease-in-out forwards;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slideInFromTop {
+  animation: slideInFromTop 1s ease-in-out forwards;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tiêu đề căn giữa */
+.tittle-center {
+  text-align: center;
+  max-width: 848px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.tittle-center h5 {
+  color: var(--secondary-color);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+}
+
+.tittle-center h2 {
+  /* max-width: 450px; */
+  margin: 0 auto;
+  color: var(--primary-color);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.2;
+}
+
+.tittle-center.center-2 h2::after {
+  content: '';
+  width: 40px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  display: block;
+  margin: 10px auto 0 auto;
+}
+
+.tittle-center p {
+  color: var(--three-color);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+}
+
+@media (max-width: 768px) {
+  .tittle-center h2 {
+    font-size: var(--font-size-md);
+  }
+}
+
+/* card */
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.card-item {
+  max-width: 343px;
+  /* max-height: 458px; */
+  background-color: var(--white-color);
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 #EEF0FF;
+  padding: 45px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card-item .image {
+  width: 146px;
+  height: 146px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.card-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-item h5 {
+  color: var(--secondary-color);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+}
+
+.card-item h3 {
+  color: var(--primary-color);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+}
+
+.card-item p {
+  color: var(--three-color);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-normal);
+}
+
+/* contentAndImage */
+.contentAndImage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.imageAndContent {
+  flex-direction: row-reverse !important;
+}
+
+.contentAndImage .image {
+  max-width: 441px;
+  height: 316px;
+}
+
+.contentAndImage .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 35px;
+}
+
+@media (max-width: 1024px) {
+  .contentAndImage {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .imageAndContent {
+    flex-direction: column !important;
+  }
+}
+
+/* tittle-left */
+.tittle-left {
+  max-width: 475px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tittle-left h5 {
+  color: var(--secondary-color);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+}
+
+.tittle-left h2 {
+  color: var(--primary-color);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.2;
+}
+
+.tittle-left p {
+  color: var(--three-color);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+}
+
+@media (max-width: 768px) {
+  .tittle-left h2 {
+    font-size: var(--font-size-md);
+  }
+}
+
+/* bubbleRight */
+.bubbleRight {
+  position: relative;
+}
+
+.bubbleRight img {
+  position: absolute;
+  right: 0;
+  top: -320px;
+  z-index: -1;
+}
+
+/* bubbleLeft */
+.bubbleLeft {
+  position: relative;
+}
+
+.bubbleLeft img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1110px;
+  z-index: -1;
+}
+
+/* bubbleLeft */
+.bubbleCenter {
+  position: relative;
+}
+
+.bubbleCenter img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.not-found {
+  position: relative;
+  height: 100vh;
+  background-color: #091156db;
+}
+.not-found span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white-color);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 1.2px;
+}
