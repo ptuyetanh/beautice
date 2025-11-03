@@ -5,8 +5,8 @@ import playButton from "@/assets/images/playButton.svg";
 import SectionTeams from "@/components/SectionTeams";
 import slogan from "@/assets/images/slogan.png";
 import SectionSlogan from "@/components/SectionSlogan";
-import Illustration1 from "@/assets/images/illustration1.png";
-import Illustration2 from "@/assets/images/illustration2.png";
+import illustration1 from "@/assets/images/illustration1.png";
+import illustration2 from "@/assets/images/illustration2.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -32,21 +32,21 @@ function About() {
       title: "Be the best and go international",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis",
-      image: Illustration1,
+      image: illustration1,
     },
     {
       name: "Our Mission",
       title: "Special & premium service to any clients",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis",
-      image: Illustration2,
+      image: illustration2,
     },
     {
       name: "Our Values",
       title: "Dedicated to giving the best services",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis",
-      image: Illustration1,
+      image: illustration1,
     },
   ];
   const showDetail = () => {
