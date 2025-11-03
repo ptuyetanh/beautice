@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { PATHS } from "../routes/paths";
+import { PATHS } from "@/routes/paths";
 
 function Menu({mobileMenu}) {
 

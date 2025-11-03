@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Logo from "./Logo";
-import mainLogo from "../assets/images/mainLogo.svg";
+import mainLogo from "@/assets/images/mainLogo.svg";
 import Menu from "./Menu";
-import menuMobile from "../assets/images/menuMobile.svg";
-import closeMobile from "../assets/images/closeMobile.svg";
+import menuMobile from "@/assets/images/menuMobile.svg";
+import closeMobile from "@/assets/images/closeMobile.svg";
 
 function Navbar() {
   const [mobileMenu, setMobileMenu] = useState(false);

@@ -1,7 +1,7 @@
 import React from "react";
 import TitleMain from "./TitleMain";
-import polygon from "../assets/images/polygon.svg";
-import { useFancybox } from "../customHook/useFancybox";
+import polygon from "@/assets/images/polygon.svg";
+import { useFancybox } from "@/customHook/useFancybox";
 
 function SectionSlogan({ slogan, name, title, description, linkVideo }) {
   useFancybox();

@@ -1,7 +1,7 @@
 import React from "react";
-import facebookColor from "../assets/images/facebookColor.svg";
-import twitterColor from "../assets/images/twitterColor.svg";
-import instagramColor from "../assets/images/instagramColor.svg";
+import facebookColor from "@/assets/images/facebookColor.svg";
+import twitterColor from "@/assets/images/twitterColor.svg";
+import instagramColor from "@/assets/images/instagramColor.svg";
 
 function CardItem({
   key,

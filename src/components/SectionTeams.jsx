@@ -7,9 +7,9 @@ import "swiper/css/effect-fade";
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
 import CardItem from "./CardItem";
 import TitleMain from "./TitleMain";
-import team1 from "../assets/images/team1.PNG";
-import team2 from "../assets/images/team2.PNG";
-import team3 from "../assets/images/team3.PNG";
+import team1 from "@/assets/images/team1.PNG";
+import team2 from "@/assets/images/team2.PNG";
+import team3 from "@/assets/images/team3.PNG";
 function SectionTeams() {
   const teams = [
     {

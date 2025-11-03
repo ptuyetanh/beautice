@@ -1,5 +1,5 @@
 import React from "react";
-import vector from "../assets/images/vector.svg";
+import vector from "@/assets/images/vector.svg";
 
 function FooterPages({name,pages}) {
   return (

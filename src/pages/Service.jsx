@@ -1,21 +1,21 @@
 import React, { useState } from "react";
-import serviceLeft from "../assets/images/serviceLeft.png";
-import serviceRight from "../assets/images/serviceRight.png";
-import TitleMain from "../components/TitleMain";
-import serviceLeft2 from "../assets/images/serviceLeft2.png";
-import serviceRight2 from "../assets/images/serviceRight2.png";
-import bubbleBG from "../assets/images/bubbleBG.svg";
-import Bubble from "../components/Bubble";
-import SectionDetail from "../components/SectionDetail";
-import angleDoubleRight from "../assets/images/angleDoubleRight.svg";
-import animation1 from "../assets/images/animation1.png";
-import animation2 from "../assets/images/animation2.png";
-import animation3 from "../assets/images/animation3.png";
-import SectionSlogan from "../components/SectionSlogan";
-import slogan2 from "../assets/images/slogan2.png";
-import angleUp from "../assets/images/angleUp.svg";
-import angleDown from "../assets/images/angleDown.svg";
-import useAos from "../customHook/useAos";
+import serviceLeft from "@/assets/images/serviceLeft.png";
+import serviceRight from "@/assets/images/serviceRight.png";
+import TitleMain from "@/components/TitleMain";
+import serviceLeft2 from "@/assets/images/serviceLeft2.png";
+import serviceRight2 from "@/assets/images/serviceRight2.png";
+import bubbleBG from "@/assets/images/bubbleBG.svg";
+import Bubble from "@/components/Bubble";
+import SectionDetail from "@/components/SectionDetail";
+import angleDoubleRight from "@/assets/images/angleDoubleRight.svg";
+import animation1 from "@/assets/images/animation1.png";
+import animation2 from "@/assets/images/animation2.png";
+import animation3 from "@/assets/images/animation3.png";
+import SectionSlogan from "@/components/SectionSlogan";
+import slogan2 from "@/assets/images/slogan2.png";
+import angleUp from "@/assets/images/angleUp.svg";
+import angleDown from "@/assets/images/angleDown.svg";
+import useAos from "@/customHook/useAos";
 
 function Service() {
   useAos();

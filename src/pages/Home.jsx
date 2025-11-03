@@ -5,22 +5,22 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
-import slideImg from "../assets/images/slideImg.svg";
-import CardItem from "../components/CardItem";
-import service1 from "../assets/images/service1.svg";
-import service2 from "../assets/images/service2.svg";
-import service3 from "../assets/images/service3.svg";
-import TitleMain from "../components/TitleMain";
-import serviceMain from "../assets/images/serviceMain.png";
-import ButtonDefault from "../components/ButtonDefault";
-import playButton from "../assets/images/playButton.svg";
-import bubbleRight from "../assets/images/bubbleRight.svg";
-import bubbleLeft from '../assets/images/bubbleLeft.svg'
-import SectionContact from "../components/SectionContact";
-import SectionTeams from "../components/SectionTeams";
-import { useFancybox } from "../customHook/useFancybox";
-import Bubble from "../components/Bubble";
-import useAos from "../customHook/useAos";
+import slideImg from "@/assets/images/slideImg.svg";
+import CardItem from "@/components/CardItem";
+import service1 from "@/assets/images/service1.svg";
+import service2 from "@/assets/images/service2.svg";
+import service3 from "@/assets/images/service3.svg";
+import TitleMain from "@/components/TitleMain";
+import serviceMain from "@/assets/images/serviceMain.png";
+import ButtonDefault from "@/components/ButtonDefault";
+import playButton from "@/assets/images/playButton.svg";
+import bubbleRight from "@/assets/images/bubbleRight.svg";
+import bubbleLeft from '@/assets/images/bubbleLeft.svg'
+import SectionContact from "@/components/SectionContact";
+import SectionTeams from "@/components/SectionTeams";
+import { useFancybox } from "@/customHook/useFancybox";
+import Bubble from "@/components/Bubble";
+import useAos from "@/customHook/useAos";
 
 function Home() {
   useFancybox();

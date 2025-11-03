@@ -1,29 +1,29 @@
 import React, { useEffect } from "react";
-import TitleMain from "../components/TitleMain";
-import about from "../assets/images/about.png";
-import playButton from "../assets/images/playButton.svg";
-import SectionTeams from "../components/SectionTeams";
-import slogan from "../assets/images/slogan.png";
-import SectionSlogan from "../components/SectionSlogan";
-import Illustration1 from "../assets/images/illustration1.png";
-import Illustration2 from "../assets/images/illustration2.png";
+import TitleMain from "@/components/TitleMain";
+import about from "@/assets/images/about.png";
+import playButton from "@/assets/images/playButton.svg";
+import SectionTeams from "@/components/SectionTeams";
+import slogan from "@/assets/images/slogan.png";
+import SectionSlogan from "@/components/SectionSlogan";
+import Illustration1 from "@/assets/images/illustration1.png";
+import Illustration2 from "@/assets/images/illustration2.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
-import logo1 from "../assets/images/logo1.svg";
-import logo2 from "../assets/images/logo2.svg";
-import logo3 from "../assets/images/logo3.svg";
-import logo4 from "../assets/images/logo4.svg";
-import logo5 from "../assets/images/logo5.svg";
-import bubbleLeft2 from '../assets/images/bubbleLeft2.svg'
-import bubbleRight2 from '../assets/images/bubbleRight2.svg'
-import { useFancybox } from "../customHook/useFancybox";
-import Bubble from "../components/Bubble";
-import SectionDetail from "../components/SectionDetail";
-import useAos from "../customHook/useAos";
+import logo1 from "@/assets/images/logo1.svg";
+import logo2 from "@/assets/images/logo2.svg";
+import logo3 from "@/assets/images/logo3.svg";
+import logo4 from "@/assets/images/logo4.svg";
+import logo5 from "@/assets/images/logo5.svg";
+import bubbleLeft2 from '@/assets/images/bubbleLeft2.svg'
+import bubbleRight2 from '@/assets/images/bubbleRight2.svg'
+import { useFancybox } from "@/customHook/useFancybox";
+import Bubble from "@/components/Bubble";
+import SectionDetail from "@/components/SectionDetail";
+import useAos from "@/customHook/useAos";
 
 function About() {
   const detail = [

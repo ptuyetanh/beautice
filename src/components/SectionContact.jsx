@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import TitleMain from "./TitleMain";
-import contact from "../assets/images/contact.svg";
+import contact from "@/assets/images/contact.svg";
 import ButtonDefault from "./ButtonDefault";
 
 function SectionContact() {

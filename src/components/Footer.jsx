@@ -1,13 +1,13 @@
 import React from "react";
-import footerLogo from "../assets/images/footerLogo.svg";
-import facebook from "../assets/images/facebook.svg";
-import twitter from "../assets/images/twitter.svg";
-import linkedin from "../assets/images/linkedin.svg";
-import youtube from "../assets/images/youtube.svg";
-import instagram from "../assets/images/instagram.svg";
-import bottomBG from "../assets/images/bottomBG.svg";
+import footerLogo from "@/assets/images/footerLogo.svg";
+import facebook from "@/assets/images/facebook.svg";
+import twitter from "@/assets/images/twitter.svg";
+import linkedin from "@/assets/images/linkedin.svg";
+import youtube from "@/assets/images/youtube.svg";
+import instagram from "@/assets/images/instagram.svg";
+import bottomBG from "@/assets/images/bottomBG.svg";
 import FooterPages from "./FooterPages";
-import arrowUp from "../assets/images/arrowUp.svg";
+import arrowUp from "@/assets/images/arrowUp.svg";
 function Footer() {
   const pages = [{name: "Home", link: "/"}, {name: "About", link: '/about'}];
   const informations = [{name: "Terms & Conditions", link: "/terms"}, {name: "Privacy Policy", link: "/privacy"}];
