@@ -110,7 +110,7 @@ function SectionTeams() {
           modules={[Navigation, Pagination, Autoplay, EffectFade]}
           //   navigation
           // pagination={{ clickable: true }}
-          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
           loop
         >
           {teams.map((value, index) => (

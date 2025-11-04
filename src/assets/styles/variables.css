@@ -320,6 +320,14 @@
   gap: 10px;
 }
 
+@media (max-width: 1024px) {
+  .tittle-left {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
 .tittle-left h5 {
   color: var(--secondary-color);
   font-size: var(--font-size-base);

@@ -58,9 +58,9 @@ function About() {
           title={item.title}
           description={item.description}
           image={item.image}
-          dataAosLeft="fade-left"
-          dataAosRight="fade-right"
-          dataAosDelay={index * 200}
+          dataAosLeft="flip-left"
+          dataAosRight="flip-right"
+          dataAosDelay={index * 100}
         />
       ) : (
         <SectionDetail
@@ -70,9 +70,9 @@ function About() {
           description={item.description}
           image={item.image}
           imageAndContent="imageAndContent"
-          dataAosLeft="fade-left"
-          dataAosRight="fade-right"
-          dataAosDelay={index * 200}
+          dataAosLeft="flip-left"
+          dataAosRight="flip-right"
+          dataAosDelay={index * 100}
         />
       )
     );

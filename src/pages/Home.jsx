@@ -144,7 +144,7 @@ function Home() {
               title={value.title}
               description={value.description}
               dataAos="slide-up"
-              dataAosDelay={index * 200}
+              dataAosDelay={index * 100}
             />
           ))}
         </div>
@@ -173,7 +173,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="image" data-aos="zoom-in" data-aos-duration="1500">
+        <div className="image" data-aos="zoom-in" data-aos-duration="500">
           <img src={serviceMain} alt="service" />
         </div>
       </section>

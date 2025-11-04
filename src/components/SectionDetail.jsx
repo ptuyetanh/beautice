@@ -24,7 +24,7 @@ function SectionDetail({
           (imageAndContent = "imageAndContent" ? dataAosLeft : dataAosRight)
         }
         data-aos-delay={dataAosDelay}
-        data-aos-duration="800"
+        data-aos-duration="600"
       >
         <TitleMain
           classMain={"tittle-left"}
@@ -40,7 +40,7 @@ function SectionDetail({
           (imageAndContent = "imageAndContent" ? dataAosRight : dataAosLeft)
         }
         data-aos-delay={dataAosDelay}
-        data-aos-duration="800"
+        data-aos-duration="600"
       >
         <img src={image} alt="About Detail" />
       </div>

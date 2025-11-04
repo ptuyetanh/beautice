@@ -67,9 +67,9 @@ function Service() {
               <img src={angleDoubleRight} alt="angleDoubleRight" />
             </button>
           }
-          dataAosLeft="fade-left"
-          dataAosRight="fade-right"
-          dataAosDelay={index * 200}
+          dataAosLeft="flip-left"
+          dataAosRight="flip-right"
+          dataAosDelay={index * 100}
         />
       ) : (
         <SectionDetail
@@ -85,9 +85,9 @@ function Service() {
               <img src={angleDoubleRight} alt="angleDoubleRight" />
             </button>
           }
-          dataAosLeft="fade-left"
-          dataAosRight="fade-right"
-          dataAosDelay={index * 200}
+          dataAosLeft="flip-left"
+          dataAosRight="flip-right"
+          dataAosDelay={index * 100}
         />
       )
     );
