@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
 
-export default function ButtonDefault({name, handleSubmit}) {
+export default function ButtonDefault({ name, handleSubmit, caretRight }) {
   return (
-    <button className="btn-default" onClick={handleSubmit}>{name}</button>
-  )
+    <button className="btn-default" onClick={handleSubmit}>
+      <span>{name}</span>
+      {caretRight}
+    </button>
+  );
 }

@@ -4,6 +4,8 @@ import mainLogo from "@/assets/images/mainLogo.svg";
 import Menu from "./Menu";
 import menuMobile from "@/assets/images/menuMobile.svg";
 import closeMobile from "@/assets/images/closeMobile.svg";
+import { PATHS } from "../routes/paths";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -24,7 +26,9 @@ function Navbar() {
   return (
     <header className="header">
       <div className="navbar container">
-      <Logo src={mainLogo} />
+      <Link to={PATHS.HOME}>
+        <Logo src={mainLogo} />
+      </Link>
       <Menu mobileMenu={mobileMenu} setMobileMenu={setMobileMenu} />
       <div className="icon-menu-mobile" onClick={() => setMobileMenu(!mobileMenu)}>
         {mobileMenu ? (

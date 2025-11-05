@@ -4,14 +4,14 @@ import gallery1 from "@/assets/images/gallery1.png";
 import gallery2 from "@/assets/images/gallery2.png";
 import gallery3 from "@/assets/images/gallery3.png";
 import gallery4 from "@/assets/images/gallery4.png";
-import useAos from './../customHook/useAos';
-import { useFancybox } from './../customHook/useFancybox';
+import useAos from "./../customHook/useAos";
+import { useFancybox } from "./../customHook/useFancybox";
 import { Link } from "react-router-dom";
-import { PATHS } from './../routes/paths';
+import { PATHS } from "./../routes/paths";
 import SectionSlogan from "../components/SectionSlogan";
 import galleryVideo from "@/assets/images/galleryVideo.png";
 import polygon from "@/assets/images/polygon.svg";
-import ButtonDefault from './../components/ButtonDefault';
+import ButtonDefault from "./../components/ButtonDefault";
 function Gallery() {
   useAos();
   useFancybox();
@@ -48,7 +48,7 @@ function Gallery() {
               className="image-item"
               key={index}
               data-aos="fade-up"
-              data-aos-delay={index * 100}
+              data-aos-delay={index * 50}
               data-fancybox="gallery"
               data-src={item.src}
             >
@@ -57,17 +57,25 @@ function Gallery() {
           ))}
         </div>
         <div className="gallery-bottom">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim, <Link to={PATHS.SERVICE}>our teams</Link>.</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+            purus sit amet luctus venenatis, lectus magna fringilla urna,
+            porttitor rhoncus dolor purus non enim,{" "}
+            <Link to={PATHS.SERVICE}>our teams</Link>.
+          </p>
         </div>
       </section>
-      <SectionSlogan 
+      <SectionSlogan
         slogan={galleryVideo}
         title={"Watch the video tour"}
-        description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis"}
+        description={
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis"
+        }
         buttonVideo={
-            <div className="video"
-          data-fancybox ="video"
-          data-src={"`https://www.youtube.com/watch?v=dQw4w9WgXcQ`"}
+          <div
+            className="video"
+            data-fancybox="video"
+            data-src={"https://www.youtube.com/watch?v=CnAmyxzNa8M&list=RDCnAmyxzNa8M&index=1&pp=8AUB"}
           >
             <img src={polygon} alt="polygon" />
           </div>
@@ -75,15 +83,15 @@ function Gallery() {
         className={"slogan-gallery"}
       />
       <section className="section-quota container contentAndImage">
-        <TitleMain 
-            classMain={"tittle-left"}
-            name={"Get The Quota"}
-            title={"Want to be handled by our professional team immediately?"}
-            description ={"lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim, nostra."}
+        <TitleMain
+          classMain={"tittle-left"}
+          name={"Get The Quota"}
+          title={"Want to be handled by our professional team immediately?"}
+          description={
+            "lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim, nostra."
+          }
         />
-        <ButtonDefault 
-            name={"Make an Appointment"}
-        />
+        <ButtonDefault name={"Make an Appointment"} />
       </section>
     </main>
   );
