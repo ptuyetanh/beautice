@@ -1,7 +1,7 @@
 import React from "react";
 import blog from "@/assets/images/blog.png";
 import { Link } from "react-router-dom";
-import BlogItem from "../components/blogItem";
+import BlogItem from "@/components/blogItem";
 import search from "@/assets/images/search.svg";
 import post1 from "@/assets/images/post1.png";
 
