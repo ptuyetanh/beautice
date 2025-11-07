@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import BlogItem from "@/components/BlogItem";
 import search from "@/assets/images/search.svg";
 import post1 from "@/assets/images/post1.png";
+import facebookColor from '@/assets/images/facebookColor.svg';
+import twitterColor from '@/assets/images/twitterColor.svg';
+import instagramColor from '@/assets/images/instagramColor.svg';
 
 function Blog() {
   return (
@@ -94,6 +97,36 @@ function Blog() {
                 <Link to="#">Laboratory</Link>
               </li>
             </ul>
+          </div>
+          <div className="widget tags">
+            <div className="title">
+              <h3>Tags</h3>
+            </div>
+            <div className="content">
+              <Link to="#">Dental</Link>
+              <Link to="#">Care</Link>
+              <Link to="#">Health</Link>
+              <Link to="#">Medicine</Link>
+              <Link to="#">Doctor</Link>
+              <Link to="#">Teeth</Link>
+              <Link to="#">Smile</Link>
+            </div>
+          </div>
+          <div className="widget social">
+            <div className="title">
+              <h3>Social Connect</h3>
+            </div>
+            <div className="content">
+              <Link to="#" className="facebook">
+                <img src={facebookColor} alt="facebookColor" />
+              </Link>
+              <Link to="#" className="twitter">
+                <img src={twitterColor} alt="" />
+              </Link>
+              <Link to="#" className="instagram">
+                <img src={instagramColor} alt="" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

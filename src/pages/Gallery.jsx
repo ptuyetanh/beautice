@@ -80,7 +80,7 @@ function Gallery() {
             <img src={polygon} alt="polygon" />
           </div>
         }
-        className={"slogan-gallery"}
+        className={"slogan-gallery-center"}
       />
       <section className="section-quota container contentAndImage">
         <TitleMain

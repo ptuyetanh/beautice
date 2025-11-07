@@ -13,10 +13,18 @@ function CardItem({
   twitter,
   instagram,
   dataAos,
-  dataAosDelay
+  dataAosDelay,
+  boxShadowNone,
 }) {
   return (
-    <div className="card-item" key={key} data-aos = {dataAos} data-aos-delay = {dataAosDelay}>
+    <div
+      className={`card-item ${
+        boxShadowNone === "box-shadow-none" ? "box-shadow-none" : ""
+      }`}
+      key={key}
+      data-aos={dataAos}
+      data-aos-delay={dataAosDelay}
+    >
       <div className="image">
         <img src={image} alt="" />
       </div>

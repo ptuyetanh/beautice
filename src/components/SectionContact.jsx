@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import TitleMain from "./TitleMain";
 import contact from "@/assets/images/contact.svg";
 import ButtonDefault from "./ButtonDefault";
+import InputForm from "./InputForm";
 
-function SectionContact() {
+function SectionContact({ titleMain }) {
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
   const [email, setEmail] = useState("");
@@ -32,11 +33,12 @@ function SectionContact() {
       default:
         break;
     }
-  }
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`First Name: ${firstname}\nLast Name: ${lastname}\nEmail: ${email}\nSubject: ${subject}\nInquiry: ${inquiry}`);
-
+    alert(
+      `First Name: ${firstname}\nLast Name: ${lastname}\nEmail: ${email}\nSubject: ${subject}\nInquiry: ${inquiry}`
+    );
   };
   return (
     <section className="section-contact container contentAndImage">
@@ -44,20 +46,51 @@ function SectionContact() {
         <img src={contact} alt="contact" />
       </div>
       <div className="content">
-        <TitleMain
-          classMain="tittle-left"
-          name="Contact Us"
-          title="Send your inquiry to our expert team"
-          description={"Lorem ipsum dolor sit amet nulla turapis tellus."}
-        />
+        {titleMain === true ? (
+          <TitleMain
+            classMain="tittle-left"
+            name="Contact Us"
+            title="Send your inquiry to our expert team"
+            description={"Lorem ipsum dolor sit amet nulla turapis tellus."}
+          />
+        ) : null}
+
         <form className="form-contact">
-          <div className="form-group">
-            <input type="text" placeholder="First Name" name="firstname" onChange={(e) => onChange(e)}/>
-            <input type="text" placeholder="Last Name" name="lastname" onChange={(e) => onChange(e)}/>
+          <div className="form-fullname">
+            <InputForm
+              type={"text"}
+              name={"firstname"}
+              onChange={onChange}
+              label={"First Name"}
+            />
+            <InputForm
+              type={"text"}
+              name={"lastname"}
+              onChange={onChange}
+              label={"Last Name"}
+            />
           </div>
-          <input type="email" placeholder="Email address" name="email" onChange={(e) => onChange(e)}/>
-          <input type="text" placeholder="Subject message" name ='subject' onChange={(e) => onChange(e)}/>
-          <textarea rows={4} placeholder="Your inquiry here" name="inquiry" onChange={(e) => onChange(e)}></textarea>
+          <InputForm
+            type={"email"}
+            name={"email"}
+            onChange={onChange}
+            label={"Email Address"}
+          />
+          <InputForm
+            type={"text"}
+            name={"subject"}
+            onChange={onChange}
+            label={"Subject Message"}
+          />
+          <div className="form-group-textarea">
+            <textarea
+              rows={4}
+              placeholder=""
+              name="inquiry"
+              onChange={(e) => onChange(e)}
+            ></textarea>
+            <label for="inquiry">Your inquiry here</label>
+          </div>
           <ButtonDefault name="Send Message" handleSubmit={handleSubmit} />
         </form>
       </div>

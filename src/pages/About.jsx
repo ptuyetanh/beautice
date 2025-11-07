@@ -58,8 +58,8 @@ function About() {
           title={item.title}
           description={item.description}
           image={item.image}
-          dataAosLeft="flip-left"
-          dataAosRight="flip-right"
+          dataAosLeft="fade-left"
+          dataAosRight="fade-right"
           dataAosDelay={index * 100}
         />
       ) : (
@@ -70,8 +70,8 @@ function About() {
           description={item.description}
           image={item.image}
           imageAndContent="imageAndContent"
-          dataAosLeft="flip-left"
-          dataAosRight="flip-right"
+          dataAosLeft="fade-left"
+          dataAosRight="fade-right"
           dataAosDelay={index * 100}
         />
       )

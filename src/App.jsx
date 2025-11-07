@@ -10,6 +10,7 @@ import ScrollToTop from './components/ScrollToTop'
 import "aos/dist/aos.css";
 import Gallery from './pages/Gallery'
 import Blog from './pages/Blog'
+import Contact from './pages/Contact'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Route path={PATHS.SERVICE} element = {<Service/>} />
           <Route path={PATHS.GALLERY} element = {<Gallery/>} />
           <Route path={PATHS.BLOG} element = {<Blog/>} />
+          <Route path={PATHS.CONTACT} element = {<Contact/>} />
         </Route>
         <Route path="*" element={<NotFound/>} />
       </Routes>

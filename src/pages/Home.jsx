@@ -179,7 +179,7 @@ function Home() {
       </section>
       <SectionTeams />
       <Bubble className={"bubbleLeft"} bubble={bubbleLeft}/>
-      <SectionContact />
+      <SectionContact titleMain = {true}/>
     </main>
   );
 }

@@ -20,8 +20,8 @@ function SectionSlogan({
       </div>
       <div className="background-color"></div>
       <div
-        className={`content container ${(className = "slogan-gallery"
-          ? "slogan-gallery"
+        className={`content container ${(className === "slogan-gallery-center"
+          ? "slogan-gallery-center"
           : "")}`}
       >
         <TitleMain

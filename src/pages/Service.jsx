@@ -67,8 +67,8 @@ function Service() {
               <img src={angleDoubleRight} alt="angleDoubleRight" />
             </button>
           }
-          dataAosLeft="flip-left"
-          dataAosRight="flip-right"
+          dataAosLeft="fade-left"
+          dataAosRight="fade-right"
           dataAosDelay={index * 100}
         />
       ) : (
@@ -85,8 +85,8 @@ function Service() {
               <img src={angleDoubleRight} alt="angleDoubleRight" />
             </button>
           }
-          dataAosLeft="flip-left"
-          dataAosRight="flip-right"
+          dataAosLeft="fade-left"
+          dataAosRight="fade-right"
           dataAosDelay={index * 100}
         />
       )
