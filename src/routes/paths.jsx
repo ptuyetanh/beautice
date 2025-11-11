@@ -5,6 +5,7 @@ export const PATHS = {
     GALLERY: "/gallery",
     BLOG: "/blog",
     CONTACT: "/contact",
+    TEAM: "/team",
 
     // AUTH: {
     //   ROOT: "/auth",

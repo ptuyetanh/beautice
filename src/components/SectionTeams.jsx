@@ -10,7 +10,7 @@ import TitleMain from "./TitleMain";
 import team1 from "@/assets/images/team1.PNG";
 import team2 from "@/assets/images/team2.PNG";
 import team3 from "@/assets/images/team3.PNG";
-function SectionTeams() {
+function SectionTeams({className}) {
   const teams = [
     {
       id: 1,
@@ -80,7 +80,7 @@ function SectionTeams() {
     },
   ];
   return (
-    <section className="section-teams container">
+    <section className={`section-teams container ${className === 'pages-team' ? 'pages-team' : ''}`}>
       <TitleMain
         classMain="tittle-center"
         name="Professional Teams"
@@ -114,8 +114,9 @@ function SectionTeams() {
           loop
         >
           {teams.map((value, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide>
               <CardItem
+                key={index}
                 image={value.image}
                 name={value.name}
                 title={value.title}

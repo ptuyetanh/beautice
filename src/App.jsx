@@ -11,6 +11,7 @@ import "aos/dist/aos.css";
 import Gallery from './pages/Gallery'
 import Blog from './pages/Blog'
 import Contact from './pages/Contact'
+import Team from './pages/Team'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           <Route path={PATHS.GALLERY} element = {<Gallery/>} />
           <Route path={PATHS.BLOG} element = {<Blog/>} />
           <Route path={PATHS.CONTACT} element = {<Contact/>} />
+          <Route path={PATHS.TEAM} element = {<Team />} />
         </Route>
         <Route path="*" element={<NotFound/>} />
       </Routes>

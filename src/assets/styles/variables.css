@@ -379,6 +379,11 @@
   bottom: -1110px;
   z-index: -1;
 }
+.bubbleLeft.lines img {
+  width: 368px;
+  top: 0;
+  z-index: -1;
+}
 
 /* bubbleLeft */
 .bubbleCenter {

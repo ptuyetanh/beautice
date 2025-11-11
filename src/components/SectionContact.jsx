@@ -3,43 +3,49 @@ import TitleMain from "./TitleMain";
 import contact from "@/assets/images/contact.svg";
 import ButtonDefault from "./ButtonDefault";
 import InputForm from "./InputForm";
+import { toast } from "react-toastify";
 
 function SectionContact({ titleMain }) {
-  const [firstname, setFirstname] = useState("");
-  const [lastname, setLastname] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [inquiry, setInquiry] = useState("");
-  const [errors, setErrors] = useState({});
+  const [form, setForm] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    subject: "",
+    inquiry: "",
+  });
 
-  const onChange = (e) => {
+  const [errors, setErrors] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    subject: "",
+    inquiry: "",
+  });
+
+  const validateFields = (value) => {
+    if (!value.trim()) return "Vui lòng nhập nội dung";
+    return "";
+  }
+
+  const handleChange = (e) => {
     const { name, value } = e.target;
-    switch (name) {
-      case "firstname":
-        setFirstname(value);
-        break;
-      case "lastname":
-        setLastname(value);
-        break;
-      case "email":
-        setEmail(value);
-        break;
-      case "subject":
-        setSubject(value);
-        break;
-      case "inquiry":
-        setInquiry(value);
-        break;
-      default:
-        break;
-    }
+    setForm((prev) => ({...prev, [name]: value}));
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(
-      `First Name: ${firstname}\nLast Name: ${lastname}\nEmail: ${email}\nSubject: ${subject}\nInquiry: ${inquiry}`
-    );
+    const firstnameError = validateFields(form.firstname);
+    const lastnameError = validateFields(form.lastname);
+    const emailError = validateFields(form.email);
+    const subjectError = validateFields(form.subject);
+    const inquiryError = validateFields(form.inquiry);
+    setErrors({ firstname: firstnameError, lastname: lastnameError, email: emailError, subject: subjectError, inquiry: inquiryError });
+    if (!firstnameError && !lastnameError && !emailError && !subjectError && !inquiryError) {
+      toast.success("Send successfully", {
+        position: "top-right",
+      });
+    }
   };
+  
   return (
     <section className="section-contact container contentAndImage">
       <div className="image">
@@ -60,36 +66,48 @@ function SectionContact({ titleMain }) {
             <InputForm
               type={"text"}
               name={"firstname"}
-              onChange={onChange}
+              handleChange={handleChange}
+              value={form.firstname}
               label={"First Name"}
+              errors={errors.firstname}
             />
             <InputForm
               type={"text"}
               name={"lastname"}
-              onChange={onChange}
+              handleChange={handleChange}
+              value={form.lastname}
               label={"Last Name"}
+              errors={errors.lastname}
             />
           </div>
           <InputForm
             type={"email"}
             name={"email"}
-            onChange={onChange}
+            handleChange={handleChange}
+            value={form.email}
             label={"Email Address"}
+            errors={errors.email}
           />
           <InputForm
             type={"text"}
             name={"subject"}
-            onChange={onChange}
+            handleChange={handleChange}
+            value={form.subject}
             label={"Subject Message"}
+            errors={errors.subject}
           />
           <div className="form-group-textarea">
             <textarea
               rows={4}
               placeholder=""
               name="inquiry"
-              onChange={(e) => onChange(e)}
+              value={form.inquiry}
+              onChange={(e) => handleChange(e)}
             ></textarea>
-            <label for="inquiry">Your inquiry here</label>
+            <label htmlFor="inquiry">Your inquiry here</label>
+            <small id="helpId" className="form-text">
+              {errors.inquiry}
+            </small>
           </div>
           <ButtonDefault name="Send Message" handleSubmit={handleSubmit} />
         </form>

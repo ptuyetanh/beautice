@@ -8,12 +8,22 @@ import instagram from "@/assets/images/instagram.svg";
 import bottomBG from "@/assets/images/bottomBG.svg";
 import FooterPages from "./FooterPages";
 import arrowUp from "@/assets/images/arrowUp.svg";
+import { PATHS } from "../routes/paths";
 function Footer() {
-  const pages = [{name: "Home", link: "/"}, {name: "About", link: '/about'}];
-  const informations = [{name: "Terms & Conditions", link: "/terms"}, {name: "Privacy Policy", link: "/privacy"}];
+  const pages = [
+    { name: "Home", link: PATHS.HOME },
+    { name: "About", link: PATHS.ABOUT },
+    { name: "Services", link: PATHS.SERVICE },
+    { name: "Gallery", link: PATHS.GALLERY },
+    {name: "Team", link: PATHS.TEAM },
+  ];
+  const informations = [
+    { name: "Terms & Conditions", link: "/terms" },
+    { name: "Privacy Policy", link: "/privacy" },
+  ];
   const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <footer className="footer">
       <div className="footer-top">
@@ -33,8 +43,8 @@ function Footer() {
           </div>
         </div>
         <div className="right">
-          <FooterPages name={"Pages"} pages={pages}/>
-          <FooterPages name = {"Informations"} pages = {informations}/>
+          <FooterPages name={"Pages"} pages={pages} />
+          <FooterPages name={"Informations"} pages={informations} />
         </div>
       </div>
       <div className="footer-bottom">
@@ -63,7 +73,9 @@ function Footer() {
         <img src={bottomBG} alt="" className="bottomBG" />
       </div>
       <div className="arrowUp" onClick={handleScrollToTop}>
-        <button><img src={arrowUp} alt="" /></button>
+        <button>
+          <img src={arrowUp} alt="" />
+        </button>
       </div>
     </footer>
   );
