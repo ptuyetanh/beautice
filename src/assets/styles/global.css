@@ -746,13 +746,13 @@ a.nav-link.active:not(:last-child)::after {
     display: flex;
     flex-direction: row;
     width: 100%;
-    gap: 30px;
+    gap: 33px;
 }
 
 @media (max-width: 574px) {
     .section-contact .content form .form-fullname {
         flex-direction: column;
-        gap: 20px;
+        gap: 33px;
     }
 }
 
