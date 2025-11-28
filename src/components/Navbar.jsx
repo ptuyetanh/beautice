@@ -10,18 +10,15 @@ import { Link } from "react-router-dom";
 function Navbar() {
   const [mobileMenu, setMobileMenu] = useState(false);
   useEffect(() => {
-    const handleScroll = () => {
-      const header = document.querySelector(".header")
-      if(window.pageYOffset > 100 ){
-        header.classList.add("nav-scroll");
-      }else if(window.pageYOffset < 100){
-        header.classList.remove("nav-scroll");
-      }
+    const header = document.querySelector(".header");
+    if (!header) return;
+
+    const onScroll = () => {
+      header.classList.toggle("nav-scroll", window.pageYOffset > 100);
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
   return (
     <header className="header">

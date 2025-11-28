@@ -78,7 +78,17 @@ a.nav-link.active:not(:last-child)::after {
 .header.nav-scroll {
     background-color: var(--white-color);
     box-shadow: 0 2px 12px #09115647;
-    transition: 0.4s;
+    animation: slideIn 0.4s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%); 
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 /* menu mobile */
